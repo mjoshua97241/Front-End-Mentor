@@ -37,6 +37,12 @@ The designs were created to the following widths:
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 html {
   /* 10px / 16px = 0625 = 62.5% */
   /* Percentage of user's browser font-size setting */
@@ -51,26 +57,48 @@ body {
   background-color: hsl(212, 45%, 89%);
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  width: 31rem;
-  height: 31rem;
+  width: 31.8rem;
+  height: 49.7rem;
 
-  background-color: hsl(212, 45%, 89%);
+  background-color: hsl(0, 0%, 100%);
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  border-radius: 1.5rem;
+
+  padding: 1.5rem 1.3rem;
 }
 
 .img img {
-  height: 18rem;
-  width: 18rem;
+  height: 28.7rem;
+  width: 29.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 26.2rem;
+  line-height: normal;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  color: hsl(220, 15%, 55%);
 }
 
 .attribution {
